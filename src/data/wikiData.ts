@@ -22,6 +22,14 @@ export interface SwordValueItem {
   obtainMethod: string;
 }
 
+export interface ExplosionItem {
+  name: string;
+  tier: 'S+' | 'S' | 'A' | 'B';
+  rarity: 'Mythical' | 'Legendary' | 'Rare';
+  effectDescription: string;
+  obtainMethod: string;
+}
+
 export const ACTIVE_CODES: CodeItem[] = [
   { code: 'GOODLUCK', reward: '1x Free Wheel Spin & 100 Coins', status: 'Active', addedDate: 'August 2026' },
   { code: 'DRAGONFLY', reward: 'Free Sword Skin & 200 Coins', status: 'Active', addedDate: 'August 2026' },
@@ -103,6 +111,44 @@ export const ABILITY_TIER_DATA: AbilityItem[] = [
     description: 'Short cooldown lightning dash used to reposition away from tight corners.',
     bestFor: 'Quick Evasion',
     cooldown: '12s',
+  },
+];
+
+export const EXPLOSION_TIER_DATA: ExplosionItem[] = [
+  {
+    name: 'Galaxy Supernova',
+    tier: 'S+',
+    rarity: 'Mythical',
+    effectDescription: 'Spawns a massive swirling cosmic singularity that engulfs the arena upon eliminating an opponent.',
+    obtainMethod: 'Season 4 Mythical Wheel Spin (0.2%)',
+  },
+  {
+    name: 'Dimensional Rift',
+    tier: 'S+',
+    rarity: 'Mythical',
+    effectDescription: 'Tears open spatial portals that shatter the arena floor with purple neon shockwaves.',
+    obtainMethod: 'Cyber Event Crate',
+  },
+  {
+    name: 'Shadow Void',
+    tier: 'S',
+    rarity: 'Legendary',
+    effectDescription: 'Erupts into a dark smoke pillar with glowing crimson lightning bolts.',
+    obtainMethod: 'Battle Pass Level 45',
+  },
+  {
+    name: 'Lightning Strike',
+    tier: 'S',
+    rarity: 'Legendary',
+    effectDescription: 'Calls down thunderbolts from above with deafening audio feedback.',
+    obtainMethod: 'Legendary Explosion Chest',
+  },
+  {
+    name: 'Fire Blast',
+    tier: 'A',
+    rarity: 'Rare',
+    effectDescription: 'Standard fiery explosion with orange flame particles.',
+    obtainMethod: 'Default Shop Purchase',
   },
 ];
 
