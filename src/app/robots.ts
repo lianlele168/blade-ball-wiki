@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://blade-ball-wiki.vercel.app/sitemap.xml',
+    sitemap: 'https://bladeball.robloxwikihub.com/sitemap.xml',
   };
 }

@@ -4,7 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://blade-ball-wiki.vercel.app'),
+  metadataBase: new URL('https://bladeball.robloxwikihub.com'),
   alternates: {
     canonical: '/',
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blade Ball Codes & Ability Tier List — Roblox Blade Ball Wiki',
     description: 'Updated Blade Ball codes for free wheel spins, ability rankings, and sword values.',
-    url: 'https://blade-ball-wiki.vercel.app',
+    url: 'https://bladeball.robloxwikihub.com',
     siteName: 'Blade Ball Wiki',
     locale: 'en_US',
     type: 'website',
@@ -53,7 +53,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Blade Ball Wiki',
-    url: 'https://blade-ball-wiki.vercel.app',
+    url: 'https://bladeball.robloxwikihub.com',
     description: 'The ultimate Roblox Blade Ball community guide with active codes, ability tier lists, and sword values.',
   };
 
