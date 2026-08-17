@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Zap, ExternalLink, Heart } from 'lucide-react';
-import MatrixNav from './MatrixNav';
 
 export default function Footer() {
   return (
@@ -80,8 +79,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-
-      <MatrixNav />
 
       <div className="max-w-7xl mx-auto pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
         <div>&copy; {new Date().getFullYear()} Blade Ball Wiki. All rights reserved.</div>
