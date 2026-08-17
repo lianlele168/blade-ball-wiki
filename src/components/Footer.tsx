@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Zap, ExternalLink, Heart } from 'lucide-react';
+import MatrixNav from './MatrixNav';
 
 export default function Footer() {
   return (
@@ -80,7 +81,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-8 pt-6 border-t border-cyan-950 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+      <MatrixNav />
+
+      <div className="max-w-7xl mx-auto pt-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
         <div>&copy; {new Date().getFullYear()} Blade Ball Wiki. All rights reserved.</div>
         <div className="flex items-center gap-1">
           <span>Built for Roblox Blade Ball players with</span>
@@ -90,3 +93,4 @@ export default function Footer() {
     </footer>
   );
 }
+

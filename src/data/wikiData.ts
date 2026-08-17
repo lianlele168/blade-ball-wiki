@@ -31,16 +31,24 @@ export interface ExplosionItem {
 }
 
 export const ACTIVE_CODES: CodeItem[] = [
-  { code: 'GOODLUCK', reward: '1x Free Wheel Spin & 100 Coins', status: 'Active', addedDate: 'August 2026' },
-  { code: 'DRAGONFLY', reward: 'Free Sword Skin & 200 Coins', status: 'Active', addedDate: 'August 2026' },
-  { code: 'SHADOWSLASH', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 2026' },
-  { code: 'SUMMERUPDATE', reward: '300 Free Coins', status: 'Active', addedDate: 'July 2026' },
-  { code: 'QUANTUMPASS', reward: '1x Raffle Ticket & 150 Coins', status: 'Active', addedDate: 'July 2026' },
-  { code: 'DELAYBALL', reward: 'Free Emote Reroll', status: 'Active', addedDate: 'July 2026' },
-  { code: 'BATTLEPASS2026', reward: '500 Free Coins', status: 'Active', addedDate: 'June 2026' },
+  { code: 'SERPENT', reward: 'Giveaway Entry for Serpent Katana', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'RAMADAN', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'SPOOKYSEASON', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: '4BVISITS', reward: 'Bubble Wand Sword Skin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'SHARKATTACK', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'SUMMERWHEEL', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'SUMMERSTARTSHERE', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'ENERGYSWORDS', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'GIVEMELUCK', reward: '4x Luck Boost in AFK World', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'DUNGEONSRELEASE', reward: '50 Dungeon Runes', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'FROGS', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'GOODVSEVIL', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
+  { code: 'FREESPINS', reward: '1x Free Wheel Spin', status: 'Active', addedDate: 'August 17, 2026' },
 ];
 
 export const EXPIRED_CODES: CodeItem[] = [
+  { code: 'GOODLUCK', reward: '100 Coins', status: 'Expired' },
+  { code: 'DRAGONFLY', reward: 'Free Sword Skin', status: 'Expired' },
   { code: 'FREESPIN100K', reward: '1x Wheel Spin', status: 'Expired' },
   { code: 'UPDATEBALL2025', reward: '200 Coins', status: 'Expired' },
   { code: 'EASTER2025', reward: 'Egg Explosion Effect', status: 'Expired' },

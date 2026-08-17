@@ -9,13 +9,49 @@ export const metadata: Metadata = {
 };
 
 export default function CodesPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How do I redeem codes in Roblox Blade Ball?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Launch Blade Ball, click the EXTRA button at the top of the lobby screen, choose CODES, enter your code into the box, and press the checkmark button.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How to get free wheel spins in Blade Ball?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Redeem active promo codes for free spin tickets, complete daily quests, win rounds in normal/hardcore arenas, or log in during weekend events.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does my Blade Ball code say Invalid or Expired?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Blade Ball codes expire rapidly when developer milestones are met. Make sure to copy and paste without extra spaces.',
+        },
+      },
+    ],
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Header */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-inner">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          <span>Last Tested in Roblox: August 12, 2026 — 100% Active</span>
+          <span>Last Tested in Roblox: August 17, 2026 — 100% Active</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
           Blade Ball Codes <span className="text-cyan-400">(August 2026)</span>
@@ -112,3 +148,4 @@ export default function CodesPage() {
     </div>
   );
 }
+
