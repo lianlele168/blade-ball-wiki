@@ -8,6 +8,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Calculator', href: '/calculator', icon: Zap },
     { name: 'Codes', href: '/codes', icon: Gift },
     { name: 'Ability Tier List', href: '/ability-tier-list', icon: Shield },
     { name: 'Explosions', href: '/explosion-tier-list', icon: Flame },
