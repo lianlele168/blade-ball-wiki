@@ -18,7 +18,7 @@ export interface SwordValueItem {
   name: string;
   rarity: 'Secret' | 'Mythical' | 'Legendary' | 'Rare';
   valueInCoins: string;
-  demand: 'Very High' | 'High' | 'Medium';
+  demand: 'Very High' | 'High' | 'Medium' | 'Low';
   obtainMethod: string;
 }
 
