@@ -5,9 +5,6 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bladeball.robloxwikihub.com'),
-  alternates: {
-    canonical: '/',
-  },
   title: 'Blade Ball Codes & Ability Tier List (August 2026) — Roblox Wiki',
   description: 'Updated Roblox Blade Ball codes for free wheel spins and coins. Explore ability tier lists (Infinity, Dragon) and sword trading value lists.',
   keywords: [
