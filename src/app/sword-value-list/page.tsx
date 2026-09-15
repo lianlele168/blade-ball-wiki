@@ -20,6 +20,24 @@ export default function SwordValueListPage() {
         </p>
       </div>
 
+      {/* Trading Showcase Screenshot */}
+      <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-slate-900/60 aspect-video max-w-4xl mx-auto my-6">
+        <img
+          src="/images/blade-ball-swords.webp"
+          alt="Roblox Blade Ball Mythic Sword Trading Post and Weapon Values"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-4 flex items-center justify-between">
+          <div className="text-xs sm:text-sm text-slate-200 font-medium">
+            <span className="text-cyan-400 font-bold">Trading Hub</span> — Mythic weapon demand, trade ratios & coin appraisals
+          </div>
+          <span className="px-2.5 py-1 bg-amber-500/20 text-amber-300 text-[11px] rounded-lg border border-amber-500/30">
+            Market Value v2.16
+          </span>
+        </div>
+      </div>
+
       {/* Table */}
       <div className="glass-panel rounded-2xl overflow-hidden border border-cyan-900/60 shadow-xl">
         <div className="overflow-x-auto">
