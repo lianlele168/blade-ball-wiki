@@ -4,7 +4,11 @@ import { ACTIVE_CODES, EXPIRED_CODES } from '@/data/wikiData';
 import CopyButton from '@/components/CopyButton';
 
 export const metadata: Metadata = {
-  title: 'Blade Ball Codes (August 2026) — Free Wheel Spins & Coins',
+  alternates: {
+    canonical: '/codes',
+  },
+
+  title: 'Blade Ball Codes (September 2026) — Free Wheel Spins & Coins',
   description: 'All active Roblox Blade Ball codes for free wheel spins, coins, raffle tickets, and sword skins. Verified daily.',
 };
 
@@ -54,7 +58,7 @@ export default function CodesPage() {
           <span>Last Tested in Roblox: August 17, 2026 — 100% Active</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-          Blade Ball Codes <span className="text-cyan-400">(August 2026)</span>
+          Blade Ball Codes <span className="text-cyan-400">(September 2026)</span>
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
           Redeem these official active Roblox Blade Ball codes for free wheel spins, coins, raffle tickets, and emote rerolls.

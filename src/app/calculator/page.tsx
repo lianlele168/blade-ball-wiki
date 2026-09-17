@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: 'Blade Ball Calculator: Wheel Spin Simulator & Sword Trade Value Calculator',
   description: 'Interactive Roblox Blade Ball simulator and trade calculator. Simulate Wheel spins with authentic 0.2% Mythical odds, track pity, and compare sword trade values for fair trades.',
   alternates: {
-    canonical: 'https://bladeball.robloxwikihub.com/calculator/',
+    canonical: 'https://bladeball.robloxwikihub.com/calculator',
   },
   openGraph: {
     title: 'Blade Ball Wheel Spin Simulator & Trade Calculator',
     description: 'Simulate spins and evaluate trade fairness in Roblox Blade Ball.',
-    url: 'https://bladeball.robloxwikihub.com/calculator/',
+    url: 'https://bladeball.robloxwikihub.com/calculator',
     type: 'website',
   },
 };
@@ -22,7 +22,7 @@ export default function CalculatorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: 'Blade Ball Wheel Spin Simulator & Trade Value Calculator',
-    url: 'https://bladeball.robloxwikihub.com/calculator/',
+    url: 'https://bladeball.robloxwikihub.com/calculator',
     applicationCategory: 'GameApplication',
     operatingSystem: 'All',
     offers: {

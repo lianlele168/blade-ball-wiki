@@ -3,7 +3,11 @@ import { DollarSign, Sparkles, ShoppingBag } from 'lucide-react';
 import { SWORD_VALUE_DATA } from '@/data/wikiData';
 
 export const metadata: Metadata = {
-  title: 'Blade Ball Sword Value List (August 2026) — Trade Price Guide',
+  alternates: {
+    canonical: '/sword-value-list',
+  },
+
+  title: 'Blade Ball Sword Value List (September 2026) — Trade Price Guide',
   description: 'Trading values for Roblox Blade Ball swords and explosion effects. Updated coin values and drop rates for Cyber Katana, Dragon Greatsword, and Galaxy Scythe.',
 };
 

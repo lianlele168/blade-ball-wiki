@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://bladeball.robloxwikihub.com'),
-  title: 'Blade Ball Codes & Ability Tier List (August 2026) — Roblox Wiki',
+  title: 'Blade Ball Codes & Ability Tier List (September 2026) — Roblox Wiki',
   description: 'Updated Roblox Blade Ball codes for free wheel spins and coins. Explore ability tier lists (Infinity, Dragon) and sword trading value lists.',
   keywords: [
     'blade ball codes',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'blade ball ability tier list',
     'blade ball sword values',
     'blade ball infinity ability',
-    'blade ball codes august 2026'
+    'blade ball codes september 2026'
   ],
   authors: [{ name: 'Blade Ball Wiki Team' }],
   openGraph: {

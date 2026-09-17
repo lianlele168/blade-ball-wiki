@@ -3,6 +3,10 @@ import { BookOpen, Zap, Target, Shield, CheckCircle2, Flame, RefreshCw, Trophy, 
 import Link from 'next/link';
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: '/beginner-guide',
+  },
+
   title: 'Roblox Blade Ball Beginner Guide — Parry Timing, Curve Balls & Clash Tactics',
   description: 'Master Roblox Blade Ball mechanics. Learn exact parry timing across latency/ping, how to execute curve deflections, spam block counters, and ability tier synergy.',
   keywords: ['blade ball guide', 'blade ball parry timing', 'blade ball curve deflect', 'blade ball clash guide', 'how to win in blade ball']

@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+};
 import Link from 'next/link';
 import { Gift, Shield, DollarSign, BookOpen, Zap, CheckCircle2, ArrowRight, Trophy, HelpCircle } from 'lucide-react';
 import { ACTIVE_CODES, ABILITY_TIER_DATA } from '@/data/wikiData';
@@ -18,7 +25,7 @@ export default function HomePage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What are active Blade Ball codes for August 2026?',
+        name: 'What are active Blade Ball codes for September 2026?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Active Blade Ball codes include GOODLUCK, DRAGONFLY, SHADOWSLASH, and SUMMERUPDATE. Redeem them for free wheel spins, coins, and sword skins.',
@@ -51,7 +58,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-cyan-900/40 text-cyan-300 border border-cyan-700/50 shadow-inner">
             <Zap className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Updated for August 2026 Season 4</span>
+            <span>Updated for September 2026 Season 4</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight">

@@ -2,7 +2,11 @@ import type { Metadata } from 'next';
 import { Users, Crown, Zap, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blade Ball Clans & Gamepasses Guide (August 2026) — Clan Buffs & VIP Perks',
+  alternates: {
+    canonical: '/clans-gamepasses',
+  },
+
+  title: 'Blade Ball Clans & Gamepasses Guide (September 2026) — Clan Buffs & VIP Perks',
   description: 'Learn about Blade Ball clan levels, coin bonuses, VIP gamepass perks, and Battle Pass rewards.',
 };
 

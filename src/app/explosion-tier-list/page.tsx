@@ -3,7 +3,11 @@ import { Sparkles, Flame, Trophy, Award } from 'lucide-react';
 import { EXPLOSION_TIER_DATA } from '@/data/wikiData';
 
 export const metadata: Metadata = {
-  title: 'Blade Ball Explosion Tier List (August 2026) — Best Elimination Effects',
+  alternates: {
+    canonical: '/explosion-tier-list',
+  },
+
+  title: 'Blade Ball Explosion Tier List (September 2026) — Best Elimination Effects',
   description: 'Rankings for all Blade Ball kill explosions including Galaxy Supernova, Dimensional Rift, and Shadow Void with drop rates and visual effects.',
 };
 
