@@ -25,10 +25,10 @@ export default function HomePage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What are active Blade Ball codes for ?',
+        name: 'What are the active Blade Ball codes?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Active Blade Ball codes include GOODLUCK, DRAGONFLY, SHADOWSLASH, and SUMMERUPDATE. Redeem them for free wheel spins, coins, and sword skins.',
+          text: `There are ${ACTIVE_CODES.length} working Blade Ball codes right now: ${ACTIVE_CODES.map((c) => c.code).join(', ')}. They redeem for free wheel spins, event tickets, sword skins and luck boosts.`,
         },
       },
       {
@@ -128,7 +128,7 @@ export default function HomePage() {
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-xl shadow-cyan-950/80 hover:scale-[1.02] transition-all"
             >
               <Gift className="w-4 h-4 text-cyan-200" />
-              <span>Get Active Codes (7)</span>
+              <span>Get Active Codes ({ACTIVE_CODES.length})</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link

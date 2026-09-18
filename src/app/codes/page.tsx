@@ -8,40 +8,55 @@ export const metadata: Metadata = {
     canonical: '/codes',
   },
 
-  title: 'Blade Ball Codes — Free Wheel Spins & Coins',
-  description: 'All active Roblox Blade Ball codes for free wheel spins, coins, raffle tickets, and sword skins. Verified daily.',
+  title: `Blade Ball Codes — ${ACTIVE_CODES.length} Working Codes + ${EXPIRED_CODES.length} Expired`,
+  description: `The ${ACTIVE_CODES.length} working Roblox Blade Ball codes for free wheel spins, coins, event tickets and sword skins, with a ${EXPIRED_CODES.length}-entry archive of retired codes.`,
 };
+
+const faqs = [
+  {
+    q: 'How do I redeem codes in Roblox Blade Ball?',
+    a: 'Launch Blade Ball and wait until you spawn into the lobby, then click the EXTRA button at the top of the screen and choose CODES. Paste one code into the box and press the checkmark to claim it. Codes are not case-sensitive, but a trailing space picked up while copying is the most common reason a valid code is rejected.',
+  },
+  {
+    q: 'How do I get free wheel spins in Blade Ball?',
+    a: 'Redeem the active codes on this page, then fall back on the repeatable sources: daily quests, winning rounds in the normal and hardcore arenas, and logging in during weekend events. Most codes hand out a single spin, so the quest loop is worth more over a week than the code list is.',
+  },
+  {
+    q: 'Why does my Blade Ball code say invalid or expired?',
+    a: 'Three reasons cover almost every case. The code may have been retired — Wiggity Studio pulls codes once a milestone is met, with no warning and no announcement. You may already have redeemed it, since each code works once per Roblox account. Or you are on the wrong server type: 4BVISITS only pays out inside a private server, so a public server will reject it even while the code is live.',
+  },
+  {
+    q: 'How many Blade Ball codes are working right now?',
+    a: `${ACTIVE_CODES.length}. Blade Ball releases codes in bursts around visit milestones and seasonal events rather than on a schedule, so the count drifts up and down. Anything that has stopped redeeming is moved to the archive below instead of being deleted, which means you can check an old code here rather than retyping it in game.`,
+  },
+  {
+    q: 'Where do new Blade Ball codes appear first?',
+    a: 'The official Wiggity Studio Discord server, usually in the announcements channel attached to a patch post. Codes are rarely posted on their own, so watching the update log is more reliable than watching for a code announcement. Bookmarking a tracker page helps, but the Discord is the source.',
+  },
+];
 
 export default function CodesPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How do I redeem codes in Roblox Blade Ball?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Launch Blade Ball, click the EXTRA button at the top of the lobby screen, choose CODES, enter your code into the box, and press the checkmark button.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How to get free wheel spins in Blade Ball?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Redeem active promo codes for free spin tickets, complete daily quests, win rounds in normal/hardcore arenas, or log in during weekend events.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Why does my Blade Ball code say Invalid or Expired?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Blade Ball codes expire rapidly when developer milestones are met. Make sure to copy and paste without extra spaces.',
-        },
-      },
-    ],
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+    })),
+  };
+
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Working Roblox Blade Ball Codes',
+    numberOfItems: ACTIVE_CODES.length,
+    itemListElement: ACTIVE_CODES.map((c, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: `Blade Ball Code: ${c.code}`,
+      description: c.reward,
+    })),
   };
 
   return (
@@ -50,18 +65,22 @@ export default function CodesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
 
       {/* Header */}
       <div className="text-center space-y-4">
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 shadow-inner">
           <ShieldCheck className="w-4 h-4 text-emerald-400" />
-          <span>Last Tested in Roblox: — 100% Active</span>
+          <span>Cross-checked against four public code trackers</span>
         </div>
         <h1 className="text-4xl sm:text-5xl font-black text-white tracking-tight">
-          Blade Ball Codes <span className="text-cyan-400"></span>
+          Blade Ball Codes
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-          Redeem these official active Roblox Blade Ball codes for free wheel spins, coins, raffle tickets, and emote rerolls.
+          {ACTIVE_CODES.length} working Roblox Blade Ball codes for free wheel spins, coins, event tickets and sword skins. Below them sits an archive of {EXPIRED_CODES.length} retired codes, so you can check an old code here instead of retyping it in game.
         </p>
       </div>
 
@@ -69,7 +88,7 @@ export default function CodesPage() {
       <section className="space-y-6">
         <h2 className="text-xl font-bold text-white flex items-center gap-2 border-b border-cyan-900/40 pb-3">
           <Gift className="w-5 h-5 text-cyan-400" />
-          <span>Active Spin Codes ({ACTIVE_CODES.length})</span>
+          <span>Working Codes ({ACTIVE_CODES.length})</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -86,7 +105,6 @@ export default function CodesPage() {
                   </span>
                 </div>
                 <div className="text-xs text-slate-300">{item.reward}</div>
-                {item.addedDate && <div className="text-[10px] text-slate-500">Added: {item.addedDate}</div>}
               </div>
               <CopyButton textToCopy={item.code} />
             </div>
@@ -116,9 +134,9 @@ export default function CodesPage() {
             <div className="w-8 h-8 rounded-lg bg-cyan-900/80 text-cyan-300 font-bold flex items-center justify-center text-sm">
               2
             </div>
-            <h3 className="text-sm font-bold text-white">Click 'EXTRA' Button</h3>
+            <h3 className="text-sm font-bold text-white">Click &apos;EXTRA&apos;</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Click the 'EXTRA' button at the top of the screen, then select 'CODES'.
+              Click the &apos;EXTRA&apos; button at the top of the screen, then select &apos;CODES&apos;.
             </p>
           </div>
 
@@ -126,11 +144,17 @@ export default function CodesPage() {
             <div className="w-8 h-8 rounded-lg bg-cyan-900/80 text-cyan-300 font-bold flex items-center justify-center text-sm">
               3
             </div>
-            <h3 className="text-sm font-bold text-white">Paste Code & Claim</h3>
+            <h3 className="text-sm font-bold text-white">Paste &amp; Claim</h3>
             <p className="text-xs text-slate-300 leading-relaxed">
-              Type or paste your active code into the text input box and press Checkmark to claim your rewards.
+              Paste one code into the box and press the checkmark. Rewards land in your inventory, not automatically equipped.
             </p>
           </div>
+        </div>
+
+        <div className="p-4 rounded-xl bg-slate-950/60 border border-cyan-900/40">
+          <p className="text-xs text-slate-400 leading-relaxed">
+            <strong className="text-slate-200">Private servers:</strong> 4BVISITS is rejected on public servers. If it fails while every other code works, start a private server and redeem it there.
+          </p>
         </div>
       </section>
 
@@ -140,11 +164,33 @@ export default function CodesPage() {
           <AlertCircle className="w-4 h-4 text-slate-500" />
           <span>Expired Codes ({EXPIRED_CODES.length})</span>
         </h2>
+        <p className="text-xs text-slate-500 -mt-2">
+          Kept rather than deleted, so a code you find in an old video can be confirmed dead in one glance. Where guides disagree on what a code paid out, the disagreement is stated instead of guessed.
+        </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {EXPIRED_CODES.map((item) => (
-            <div key={item.code} className="p-3 rounded-lg bg-slate-950/60 border border-slate-900 flex justify-between items-center text-xs opacity-60">
-              <span className="font-mono text-slate-400 line-through">{item.code}</span>
-              <span className="text-[10px] text-red-400/80">Expired</span>
+            <div key={item.code} className="p-3 rounded-lg bg-slate-950/60 border border-slate-900 flex justify-between items-start gap-2 text-xs opacity-70">
+              <div className="space-y-0.5">
+                <div className="font-mono text-slate-400 line-through">{item.code}</div>
+                <div className="text-[10px] text-slate-500">{item.reward}</div>
+              </div>
+              <span className="text-[10px] text-red-400/80 shrink-0">Expired</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="glass-panel p-8 rounded-2xl space-y-6">
+        <h2 className="text-2xl font-bold text-white flex items-center gap-2 border-b border-cyan-900/40 pb-4">
+          <HelpCircle className="w-6 h-6 text-cyan-400" />
+          <span>Blade Ball Codes FAQ</span>
+        </h2>
+        <div className="space-y-5">
+          {faqs.map((faq) => (
+            <div key={faq.q}>
+              <h3 className="text-sm font-bold text-white">{faq.q}</h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mt-1.5">{faq.a}</p>
             </div>
           ))}
         </div>
@@ -152,4 +198,3 @@ export default function CodesPage() {
     </div>
   );
 }
-
