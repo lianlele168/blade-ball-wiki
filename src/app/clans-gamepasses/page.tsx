@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     canonical: '/clans-gamepasses',
   },
 
-  title: 'Blade Ball Clans & Gamepasses Guide (September 2026) — Clan Buffs & VIP Perks',
+  title: 'Blade Ball Clans & Gamepasses Guide — Clan Buffs & VIP Perks',
   description: 'Learn about Blade Ball clan levels, coin bonuses, VIP gamepass perks, and Battle Pass rewards.',
 };
 

@@ -29,7 +29,7 @@ export default function Footer() {
           <ul className="space-y-2 text-xs">
             <li>
               <Link href="/codes" className="hover:text-cyan-300 transition-colors">
-                Blade Ball Codes (August 2026)
+                Blade Ball Codes 
               </Link>
             </li>
             <li>

@@ -14,7 +14,7 @@ export default function AuthorCard({
   role = 'Lead Clash Mechanics Analyst',
   experience = 'Top 100 Leaderboard & 300+ Hours',
   patchVersion = 'Patch v2.16 Verified',
-  lastUpdated = 'September 2026',
+  lastUpdated = '',
   editorialNote = 'All clash multipliers, curveball curve frames, and sword trading values are empirically tested in live competitive matches.',
 }: AuthorCardProps) {
   return (
@@ -41,9 +41,7 @@ export default function AuthorCard({
           <span className="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-rose-500/10 text-rose-300 border border-rose-500/20">
             ⚡ {patchVersion}
           </span>
-          <span className="text-xs text-gray-400">
-            Updated: <strong className="text-gray-200">{lastUpdated}</strong>
-          </span>
+          
         </div>
       </div>
 

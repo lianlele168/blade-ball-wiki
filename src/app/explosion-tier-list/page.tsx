@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/explosion-tier-list',
   },
 
-  title: 'Blade Ball Explosion Tier List (September 2026) — Best Elimination Effects',
+  title: 'Blade Ball Explosion Tier List — Best Elimination Effects',
   description: 'Rankings for all Blade Ball kill explosions including Galaxy Supernova, Dimensional Rift, and Shadow Void with drop rates and visual effects.',
 };
 

@@ -16,7 +16,7 @@ export default function HomePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    dateModified: '2026-09-15',
+
     author: {
       '@type': 'Person',
       name: 'Kai Shadowblade',
@@ -25,7 +25,7 @@ export default function HomePage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What are active Blade Ball codes for September 2026?',
+        name: 'What are active Blade Ball codes for ?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Active Blade Ball codes include GOODLUCK, DRAGONFLY, SHADOWSLASH, and SUMMERUPDATE. Redeem them for free wheel spins, coins, and sword skins.',
@@ -58,7 +58,7 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-medium bg-cyan-900/40 text-cyan-300 border border-cyan-700/50 shadow-inner">
             <Zap className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Updated for September 2026 Season 4</span>
+            <span>Updated for Season 4</span>
           </div>
 
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight">
@@ -79,7 +79,6 @@ export default function HomePage() {
               role="Lead Clash Mechanics Analyst"
               experience="Top 100 Leaderboard & 300+ Hours"
               patchVersion="Patch v2.16 Verified"
-              lastUpdated="September 2026"
               editorialNote="All clash multiplier curves, parry frame data, and sword trading values are verified live in competitive lobby tournaments."
             />
           </div>

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     canonical: '/ability-tier-list',
   },
 
-  title: 'Blade Ball Ability Tier List (September 2026) — Best Abilities Ranked',
+  title: 'Blade Ball Ability Tier List — Best Abilities Ranked',
   description: 'Complete Roblox Blade Ball ability tier list ranking Infinity, Dragon Instinct, Quantum, Forcefield, and Reaper with cooldowns and counters.',
 };
 
@@ -22,7 +22,7 @@ export default function AbilityTierListPage() {
           Blade Ball <span className="text-cyan-400">Ability Tier List</span>
         </h1>
         <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-          Rankings for all Blade Ball skills in September 2026. Find the meta-defining abilities for 1v1 clashes, multiplayer arenas, and high-speed deflects.
+          Rankings for all Blade Ball skills in . Find the meta-defining abilities for 1v1 clashes, multiplayer arenas, and high-speed deflects.
         </p>
       </div>
 
