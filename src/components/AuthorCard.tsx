@@ -10,12 +10,12 @@ interface AuthorCardProps {
 }
 
 export default function AuthorCard({
-  authorName = 'Kai Shadowblade',
-  role = 'Lead Clash Mechanics Analyst',
-  experience = 'Top 100 Leaderboard & 300+ Hours',
+  authorName = 'Hlele',
+  role = 'Editor',
+  experience = 'AI-assisted research, human-reviewed',
   patchVersion = 'Patch v2.16 Verified',
   lastUpdated = '',
-  editorialNote = 'All clash multipliers, curveball curve frames, and sword trading values are empirically tested in live competitive matches.',
+  editorialNote = 'All data is cross-verified from multiple sources; unverified values are explicitly labeled.',
 }: AuthorCardProps) {
   return (
     <div className="w-full rounded-2xl bg-gray-900/50 border border-white/10 p-4 sm:p-5 backdrop-blur-md my-6">

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'blade ball infinity ability',
     'blade ball codes '
   ],
-  authors: [{ name: 'Blade Ball Wiki Team' }],
+  authors: [{ name: 'Hlele' }],
   openGraph: {
     title: 'Blade Ball Codes & Ability Tier List — Roblox Blade Ball Wiki',
     description: 'Updated Blade Ball codes for free wheel spins, ability rankings, and sword values.',

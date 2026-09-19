@@ -18,8 +18,8 @@ export default function HomePage() {
 
     author: {
       '@type': 'Person',
-      name: 'Kai Shadowblade',
-      jobTitle: 'Lead Clash Mechanics Analyst'
+      name: 'Hlele',
+      jobTitle: 'Editor'
     },
     mainEntity: [
       {
@@ -74,11 +74,11 @@ export default function HomePage() {
           {/* Author Card */}
           <div className="max-w-3xl mx-auto text-left">
             <AuthorCard
-              authorName="Kai Shadowblade"
-              role="Lead Clash Mechanics Analyst"
-              experience="Top 100 Leaderboard & 300+ Hours"
+              authorName="Hlele"
+              role="Editor"
+              experience="AI-assisted research, human-reviewed"
               patchVersion="Patch v2.16 Verified"
-              editorialNote="All clash multiplier curves, parry frame data, and sword trading values are verified live in competitive lobby tournaments."
+              editorialNote="All data is cross-verified from multiple sources; unverified values are explicitly labeled."
             />
           </div>
 
