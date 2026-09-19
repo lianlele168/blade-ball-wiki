@@ -16,7 +16,7 @@ export default function Footer() {
             </span>
           </div>
           <p className="text-xs text-slate-400 leading-relaxed max-w-md">
-            The ultimate community resource for Roblox Blade Ball. Get verified codes for free wheel spins, ability tier lists, sword value lists, and deflect mechanics guides.
+            The ultimate community resource for Roblox Blade Ball. Get verified codes for free wheel spins, real ability data lists, confirmed sword skins, and deflect mechanics guides.
           </p>
           <div className="text-[11px] text-slate-500">
             Disclaimer: Blade Ball Wiki is an unofficial fansite. Roblox and Blade Ball are registered trademarks of their respective owners.
@@ -34,12 +34,12 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/ability-tier-list" className="hover:text-cyan-300 transition-colors">
-                Ability Tier List (Infinity, Dragon)
+                Ability Tier List (All 60 Abilities)
               </Link>
             </li>
             <li>
               <Link href="/sword-value-list" className="hover:text-cyan-300 transition-colors">
-                Sword & Explosion Value List
+                Confirmed Sword Skins
               </Link>
             </li>
             <li>

@@ -11,8 +11,8 @@ export default function Navbar() {
     { name: 'Calculator', href: '/calculator', icon: Zap },
     { name: 'Codes', href: '/codes', icon: Gift },
     { name: 'Ability Tier List', href: '/ability-tier-list', icon: Shield },
-    { name: 'Explosions', href: '/explosion-tier-list', icon: Flame },
-    { name: 'Sword Values', href: '/sword-value-list', icon: DollarSign },
+    { name: 'Limited Abilities', href: '/explosion-tier-list', icon: Flame },
+    { name: 'Sword Skins', href: '/sword-value-list', icon: DollarSign },
     { name: 'Clans & VIP', href: '/clans-gamepasses', icon: Users },
     { name: 'Guide', href: '/beginner-guide', icon: BookOpen },
   ];

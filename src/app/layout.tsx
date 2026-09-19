@@ -6,12 +6,12 @@ import Footer from '@/components/Footer';
 export const metadata: Metadata = {
   metadataBase: new URL('https://bladeball.robloxwikihub.com'),
   title: 'Blade Ball Codes & Ability Tier List — Roblox Wiki',
-  description: 'Updated Roblox Blade Ball codes for free wheel spins and coins. Explore ability tier lists (Infinity, Dragon) and sword trading value lists.',
+  description: 'Updated Roblox Blade Ball codes for free wheel spins and coins. Explore all 60 real Blade Ball abilities and confirmed sword skins.',
   keywords: [
     'blade ball codes',
     'blade ball tier list',
     'blade ball ability tier list',
-    'blade ball sword values',
+    'blade ball sword skins',
     'blade ball infinity ability',
     'blade ball codes '
   ],

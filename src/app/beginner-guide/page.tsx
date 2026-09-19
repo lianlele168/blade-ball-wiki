@@ -27,21 +27,21 @@ export default function BeginnerGuidePage() {
     {
       step: '3',
       title: 'Mastering Rapid Clashes & Spam Block Duels',
-      desc: 'When two skilled players stand within 5 studs of each other, the ball bounces back and forth in fractions of a second, initiating a high-speed Clash. Spamming the block button blindly will trigger the cooldown penalty (0.4s lockout). Instead, anchor your eyes on the white clash spark: press Block synchronously with the audio slash cue. If you feel overwhelmed during a clash, trigger movement abilities like Blink, Phase Bypass, or Thunder Dash to break line-of-sight and reset ball acceleration.'
+      desc: 'When two skilled players stand within 5 studs of each other, the ball bounces back and forth in fractions of a second, initiating a high-speed Clash. Spamming the block button blindly will trigger the cooldown penalty (0.4s lockout). Instead, anchor your eyes on the white clash spark: press Block synchronously with the audio slash cue. If you feel overwhelmed during a clash, trigger movement abilities like Blink, Galactum, or Shadow Step to break line-of-sight and reset ball acceleration.'
     },
     {
       step: '4',
       title: 'Ability Loadout Synergy & Counter-Play',
-      desc: 'Choose your ability based on the lobby composition. In lobbies dominated by aggressive rushers, equip Forcefield or Infinity to render close-range ambush tactics useless. Infinity halts the ball dead in mid-air for 2.5 seconds, completely destroying the timing of aggressive spam-blockers. In large open arenas, Reaper and Telekinesis dominate by accelerating ball velocity beyond human reaction speeds.'
+      desc: 'Choose your ability based on the lobby composition. In lobbies dominated by aggressive rushers, equip Forcefield to deflect close-range pressure or Infinity Reaper so a shadow deflects for you between your own hits. In large open arenas, mobility picks like Galactum (dash becomes a 15-stud teleport) and Shadow Step (swap behind the nearest player) let you escape targeted curve balls and reposition for the final deflect.'
     }
   ];
 
   const abilityMatrix = [
-    { ability: 'Infinity', role: 'Time Freeze & Rhythm Disruption', counter: 'Counters Close-Range Spam Blockers', tier: 'S+' },
-    { ability: 'Reaper', role: 'Speed Stacking per Elimination', counter: 'Dominates Late-Game 1v1 Endgames', tier: 'S+' },
-    { ability: 'Forcefield', role: 'Automated 1.5s Invulnerability', counter: 'Saves against surprise blindside attacks', tier: 'S' },
-    { ability: 'Thunder Dash', role: 'Instant Re-positioning', counter: 'Escapes lethal clash traps and corner pin-downs', tier: 'S' },
-    { ability: 'Telekinesis', role: 'Target Redirection & Direction Shift', counter: 'Snipes unsuspecting players from behind', tier: 'A' },
+    { ability: 'Infinity Reaper', role: 'Shadow auto-deflect + 0.75s hit cooldown (15,000 Coins)', counter: 'Counters rapid volley exchanges and 1v1 endgames', tier: 'S' },
+    { ability: 'Galactum', role: 'Dash becomes a 15-stud teleport, 5s cooldown (3,500 Coins)', counter: 'Escapes lethal clash traps and corner pin-downs', tier: 'S' },
+    { ability: 'Frozen Era', role: 'Freezes nearby players 0.5s, pauses their dash cooldowns 3s (3,500 Coins)', counter: 'Interrupts dash-reliant rushers mid-approach', tier: 'S' },
+    { ability: 'Shadow Step', role: 'Swap behind the nearest player (3,500 Coins)', counter: 'Repositions for surprise curve deflects', tier: 'A' },
+    { ability: 'Forcefield', role: 'Energy barrier deflects the ball, scales with player count (500 Coins)', counter: 'Saves against close-range spam and blindside shots', tier: 'B' },
   ];
 
   const faqs = [
@@ -55,7 +55,7 @@ export default function BeginnerGuidePage() {
     },
     {
       q: 'How do you defeat Infinity users?',
-      a: 'When an opponent activates Infinity, do not panic or spam block. Wait patiently during the 2.5-second freeze animation. Watch their sword swing direction right as the freeze expires, and parry the moment the ball begins forward motion.'
+      a: 'Infinity shortens the user\'s ability cooldown with every successful hit (up to a 2 second reduction), so their power comes from staying in long rallies. Do not trade hits into their rhythm: disengage with a mobility ability like Blink or Galactum, reset the distance, and re-engage when their momentum breaks.'
     },
     {
       q: 'Which sword has the best stats in Blade Ball?',
@@ -101,14 +101,14 @@ export default function BeginnerGuidePage() {
             className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500 text-slate-950 font-bold rounded-xl text-xs hover:bg-cyan-400 transition-colors shadow-lg shadow-cyan-500/20"
           >
             <Zap className="w-3.5 h-3.5" />
-            <span>Open Sword Trade & Spin Simulator</span>
+            <span>Open Ability Database & Sorter</span>
           </Link>
           <Link
             href="/sword-value-list"
             className="inline-flex items-center gap-2 px-4 py-2 bg-slate-800 border border-slate-700 text-slate-200 font-bold rounded-xl text-xs hover:bg-slate-700 transition-colors"
           >
             <Trophy className="w-3.5 h-3.5 text-amber-400" />
-            <span>View 28+ Sword Values List</span>
+            <span>View Confirmed Sword Skins</span>
           </Link>
         </div>
       </div>

@@ -74,7 +74,7 @@ export default function ClansGamepassesPage() {
             <li className="flex items-start gap-2.5">
               <Zap className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
               <div>
-                <strong className="text-white">Battle Pass Premium (799 Robux):</strong> Unlocks 50 tiers of Mythical Swords and Secret Explosions.
+                <strong className="text-white">Battle Pass Premium (799 Robux):</strong> Unlocks 50 tiers of cosmetic rewards (sword skins and other cosmetics).
               </div>
             </li>
           </ul>
